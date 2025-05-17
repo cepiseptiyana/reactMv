@@ -11,12 +11,12 @@
 /* Responsive */
 @media only screen and (max-width: 768px) {
   .jumbotron .heading {
-    font-size: 5vmax;
+    font-size: 4vmax;
   }
 }
 
 @media only screen and (max-width: 540px) {
   .jumbotron .heading {
-    font-size: 4.2vmax;
+    font-size: 3vmax;
   }
 }
