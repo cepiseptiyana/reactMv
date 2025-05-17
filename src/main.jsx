@@ -7,15 +7,15 @@ import App from "./App.jsx";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 import ReactDOM from "react-dom/client";
-import { BrowserRouter } from "react-router";
+import { HashRouter } from "react-router";
 
 // aos scrolling
 import "aos/dist/aos.css";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <BrowserRouter>
+    <HashRouter>
       <App />
-    </BrowserRouter>
+    </HashRouter>
   </StrictMode>
 );
