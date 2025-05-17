@@ -19,9 +19,9 @@ const Section = () => {
 
   const [movie, setMovie] = useState([]);
   const [mostViewed, setMostViewed] = useState([]);
+  const queryParams = new URLSearchParams(location.search);
 
   useEffect(() => {
-    const queryParams = new URLSearchParams(location.search);
     console.log(queryParams.get("name"));
     console.log(nameMovie);
     async function fetchData() {
@@ -67,7 +67,7 @@ const Section = () => {
     }
 
     fetchData();
-  }, [nameMovie]);
+  }, [nameMovie, queryParams.get("name")]);
 
   function moviesDetail(imdbID) {
     navigate("/moviesDetails?fromHome=" + imdbID);
@@ -108,9 +108,9 @@ const Section = () => {
 
           <div className="container pagination">
             <div className="wrapper__pagination">
-              <a href="/mostMovie?name=avengers">1</a>
-              <a href="/mostMovie?name=transformers">2</a>
-              <a href="/mostMovie?name=fast">3</a>
+              <Link to="/mostMovie?name=avengers">1</Link>
+              <Link to="/mostMovie?name=transformers">2</Link>
+              <Link to="/mostMovie?name=fast">3</Link>
             </div>
           </div>
         </div>
