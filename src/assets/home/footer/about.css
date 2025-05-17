@@ -1,0 +1,92 @@
+.footer .wrapper__about {
+  padding-top: 10px;
+  display: flex;
+  justify-content: center;
+
+  ul {
+    box-shadow: 0 0 30px 8px #f5f2f279;
+    padding: 5px 0;
+    width: 100%;
+    margin-bottom: 0;
+    display: flex;
+    justify-content: center;
+    column-gap: 50px;
+    background-color: #f5f2f22c;
+
+    li {
+      list-style-type: none;
+
+      h1 {
+        color: #ffae00;
+      }
+
+      .Menu {
+        .home,
+        .horror,
+        .comedy,
+        .drama {
+          color: rgb(255, 255, 255);
+          text-decoration: none;
+
+          &:hover {
+            cursor: pointer;
+            transform: scale(1.04);
+            transition: all 0.3s ease-in-out;
+          }
+        }
+      }
+
+      .Menu,
+      .wrapper {
+        color: white;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .wrapper .support {
+        color: rgb(255, 255, 255);
+        text-decoration: none;
+
+        &:hover {
+          cursor: pointer;
+          transform: scale(1.04);
+          transition: all 0.3s ease-in-out;
+        }
+      }
+    }
+  }
+}
+
+/* Responsive */
+
+@media only screen and (max-width: 768px) {
+  .footer .wrapper__about {
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+
+    ul {
+      margin-bottom: 0;
+      display: flex;
+      justify-content: center;
+      column-gap: 50px;
+      background-color: #f5f2f22c;
+    }
+  }
+}
+
+@media only screen and (max-width: 540px) {
+  .footer .wrapper__about {
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+
+    ul {
+      flex-direction: column;
+
+      li {
+        padding: 0 10px;
+      }
+    }
+  }
+}

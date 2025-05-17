@@ -1,0 +1,25 @@
+.jumbotron .jumbotron__video {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+
+  &.wakanda,
+  &.avengers,
+  &.transformers,
+  &.spiderman,
+  &.insidious {
+    left: 0;
+    animation: fadeIn 1s;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    width: 10%;
+  }
+
+  to {
+    width: 100%;
+  }
+}

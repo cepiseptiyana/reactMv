@@ -1,0 +1,20 @@
+.jumbotron .paragraph {
+  padding-top: 10px;
+  font-size: 1rem;
+  font-family: Risque;
+  text-transform: capitalize;
+  color: aliceblue;
+}
+
+/* Responsive */
+@media only screen and (max-width: 768px) {
+  .jumbotron .paragraph {
+    font-size: 1.8vmax;
+  }
+}
+
+@media only screen and (max-width: 540px) {
+  .jumbotron .paragraph {
+    font-size: 2vmax;
+  }
+}

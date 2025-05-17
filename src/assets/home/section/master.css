@@ -1,0 +1,17 @@
+@import url("nav/master.css");
+@import url("slider/master.css");
+@import url("mostViewed/master.css");
+
+.section {
+  background-color: black;
+  padding-top: 50px;
+}
+
+/* Responsive */
+
+@media only screen and (max-width: 768px) {
+  .section {
+    background-color: black;
+    padding-top: 40 px;
+  }
+}

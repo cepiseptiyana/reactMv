@@ -1,0 +1,13 @@
+deklarasi :
+var nilai_input = string
+
+algoritma :
+IF (nilai_input.length != 0) THEN
+    navigate("/moviesDetails?=nilai_input)
+ELSE 
+    alert("search is empty")
+ENDIF
+
+
+membuat pages moviesDetails
+

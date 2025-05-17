@@ -1,0 +1,11 @@
+@import url("home/navbar/master.css");
+@import url("home/jumbotron/master.css");
+@import url("home/section/master.css");
+@import url("home/footer/master.css");
+@import url("details/master.css");
+
+/* fontStyle */
+@font-face {
+  font-family: Risque;
+  src: url("font/Risque-Regular.ttf");
+}

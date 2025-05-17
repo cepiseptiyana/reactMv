@@ -1,0 +1,42 @@
+.Navbar .Menu {
+  display: flex;
+  column-gap: 10px;
+
+  .home,
+  .horror,
+  .comedy,
+  .drama {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+  }
+
+  .home:active,
+  .horror:active,
+  .comedy:active,
+  .drama:active {
+    color: rgb(7, 7, 7);
+  }
+}
+
+/* Responsive */
+
+@media only screen and (max-width: 768px) {
+  .Navbar {
+    .Menu {
+      position: absolute;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.394);
+      box-shadow: 0 0 10px white;
+      top: -150px;
+      display: flex;
+      flex-direction: column;
+      padding-left: 10px;
+      row-gap: 10px;
+      transition: 300ms;
+    }
+
+    .Menu.active {
+      top: 50px;
+    }
+  }
+}

@@ -1,0 +1,27 @@
+.section .most__viewed {
+  .wrapper__most__viewed {
+    h1 {
+      padding-top: 0;
+      background-color: #ffffffbd;
+    }
+
+    .detail {
+      display: flex;
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .section .most__viewed {
+    .wrapper__most__viewed {
+      .detail {
+        justify-content: center;
+        flex-wrap: wrap;
+
+        p {
+          font-size: 0.6rem;
+        }
+      }
+    }
+  }
+}

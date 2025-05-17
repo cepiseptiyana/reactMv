@@ -1,0 +1,19 @@
+@import url("input.css");
+@import url("judul.css");
+@import url("menu.css");
+
+.Navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  column-gap: 5px;
+  height: 50px;
+
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 99;
+}
+
+/* Responsive */

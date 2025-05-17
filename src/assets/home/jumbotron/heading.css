@@ -1,0 +1,22 @@
+.jumbotron .heading {
+  font-size: 5rem;
+
+  font-family: Risque;
+  background-color: rgba(137, 137, 137, 0.097);
+  text-transform: capitalize;
+  color: aliceblue;
+  z-index: -1;
+}
+
+/* Responsive */
+@media only screen and (max-width: 768px) {
+  .jumbotron .heading {
+    font-size: 5vmax;
+  }
+}
+
+@media only screen and (max-width: 540px) {
+  .jumbotron .heading {
+    font-size: 4.2vmax;
+  }
+}
