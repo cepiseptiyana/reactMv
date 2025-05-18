@@ -9,3 +9,22 @@
   font-family: Risque;
   src: url("font/Risque-Regular.ttf");
 }
+
+/* bubble */
+.bubble {
+  position: absolute;
+  z-index: 9999;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.7);
+  pointer-events: none;
+  animation: floatUp 1s ease-out forwards;
+}
+
+@keyframes floatUp {
+  to {
+    transform: translateY(50px) scale(0.5);
+    opacity: 0;
+  }
+}
